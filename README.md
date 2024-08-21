@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 - Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
 
-##demo
+## demo
 
-###Cluster-Level
-![image]https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/cluster.png
+### Cluster-Level
+![image] (https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/cluster.png)
