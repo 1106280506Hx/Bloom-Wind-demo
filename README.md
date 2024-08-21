@@ -10,5 +10,21 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 ## demo
 
+### preview GIF
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/tutieshi_640x360_184s.gif)
+
 ### Cluster-Level
-![image] (public/cluster.png)
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/cluster.png)
+
+### Post-Level
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/post.png)
+
+### Word-Cloud
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/word.png)
+
+### Post
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/tiezi.png)
+
+## How to use
+1. npm install
+2. npm run dev
