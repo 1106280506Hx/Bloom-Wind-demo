@@ -11,4 +11,4 @@ This template should help get you started developing with Vue 3 and TypeScript i
 ## demo
 
 ### Cluster-Level
-![image] (https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/cluster.png)
+![image] (public/cluster.png)
