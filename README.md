@@ -21,15 +21,13 @@ The cluster-level influence model is used to evaluate the likelihood of a topic 
 - Recency Effect (E): The higher the similarity in content among posts related to the topic, the greater the likelihood of its spread.
 
 The calculation formula is as follows:
-\( P_{i-j}^t = 1 - e^{-S - K \cdot E} \)
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/f1.png)
 
 - K: Represents the influence of KOLs.
 - S: Represents the significance of the information.
 - E: Represents the content relevance.
 
-S=\frac{|C^{i,t-1}(h)||C^{j,t}(h)|}{|C^{i,t-1}||C^{j,t}|}
-K=\frac{C^{i,t-1}_{infposts}(h)}{max_h(C^{i,t-1}_{infposts}(h))}+\frac{C^{i,t-1}_{infaccts}(h)}{max_h(C^{i,t-1}_{infaccts}(h))}
-E=w_1·Sim（C^{i,t-1}_{reprword}(h),C^{j,t}_{reprword}(h)）+w_2·Sim（C^{i,t-1}_{hashtag}(h),C^{j,t}_{hashtag}(h)）+w_3·Same（C^{i,t-1}_{textURL}(h),C^{j,t}_{textURL}(h)）+w_4·Direct（C^{i,t-1}_{postURL}(h),C^{j,t}_{postURL}(h)）+w_5·Direct(i,C^{j,t}_{text}(h))
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/f2.png)
 
 ![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/cluster.png)
 
@@ -54,10 +52,8 @@ Timeliness (t(W) - t(T)):
   - Time Difference: Calculates the time difference between the publication times of the target and source posts to assess the impact of timeliness on dissemination.
 
 The calculation formula is as follows:
-P_{T→W}=max(Direct(T_{postURL},W_{text}),1-e^{-\frac{CR+UR+HR}{1+0.2(t(W)-t(T))}})
-CR=\frac{1}{2}(Mention(T,W)+Score(T)·max(Sim(T_{text},W_{text}),Sim(T_{hashtag},W_{hashtag}),Same(T_{textURL},W_{textURL}))
-UR=Score(U(T))·Sim(U_{userinfo}(T),U_{userinfo}(W))
-HR=\frac{2(w_6·Sim(U_{interest{T},U_{interest}})+w_7·PastSpread(U(T),U(W)))}{1+exp(-PastNum(h,U(T),U(W)))}
+
+![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/f3.png)
 
 ![](https://github.com/1106280506Hx/Bloom-Wind-demo/blob/main/public/post.png)
 
