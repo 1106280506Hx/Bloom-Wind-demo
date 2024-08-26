@@ -21,7 +21,7 @@ The cluster-level influence model is used to evaluate the likelihood of a topic 
 - Recency Effect (E): The higher the similarity in content among posts related to the topic, the greater the likelihood of its spread.
 
 The calculation formula is as follows:
-P_{i−j}^t=1−e^{−S−K∗E}
+\( P_{i-j}^t = 1 - e^{-S - K \cdot E} \)
 
 - K: Represents the influence of KOLs.
 - S: Represents the significance of the information.
